@@ -121,7 +121,7 @@ namespace Loading
         }
         public void Music()
         {
-            music.Source = new Uri(@"E:\Monopoly\Monopoly\ChargementMusic.mp3");
+            music.Source = new Uri(@"D:\Monopoly\Monopoly\ChargementMusic.mp3");
             music.Volume = 1;
 
             grdMain.Children.Add(music);
@@ -131,7 +131,7 @@ namespace Loading
         {
             if (music.Volume > 0)
             {
-                music.Volume -= 0.2;
+                music.Volume -= 0.1;
             }
         }
 
@@ -139,7 +139,7 @@ namespace Loading
         {
             if (music.Volume < 1)
             {
-                music.Volume += 0.2;
+                music.Volume += 0.1;
             }
         }
     }

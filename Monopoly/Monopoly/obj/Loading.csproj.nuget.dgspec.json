@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Monopoly\\Monopoly\\Loading.csproj": {}
+    "D:\\Monopoly\\Monopoly\\Loading.csproj": {}
   },
   "projects": {
-    "E:\\Monopoly\\Monopoly\\Loading.csproj": {
+    "D:\\Monopoly\\Monopoly\\Loading.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Monopoly\\Monopoly\\Loading.csproj",
+        "projectUniqueName": "D:\\Monopoly\\Monopoly\\Loading.csproj",
         "projectName": "Loading",
-        "projectPath": "E:\\Monopoly\\Monopoly\\Loading.csproj",
-        "packagesPath": "C:\\Users\\160646.asty-moulin\\.nuget\\packages\\",
-        "outputPath": "E:\\Monopoly\\Monopoly\\obj\\",
+        "projectPath": "D:\\Monopoly\\Monopoly\\Loading.csproj",
+        "packagesPath": "C:\\Users\\lemer\\.nuget\\packages\\",
+        "outputPath": "D:\\Monopoly\\Monopoly\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\160646.asty-moulin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lemer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
         }
       }
     }

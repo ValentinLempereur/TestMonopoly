@@ -12,7 +12,7 @@ namespace Loading
         {
             BitmapImage SousImage = new BitmapImage();
             SousImage.BeginInit();
-            SousImage.UriSource = new Uri(@"E:\Monopoly\Monopoly\LoadingScreen.jpg");
+            SousImage.UriSource = new Uri(@"D:\Monopoly\Monopoly\LoadingScreen.jpg");
             SousImage.DecodePixelWidth = 600;
             SousImage.EndInit();
 

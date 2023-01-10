@@ -34,6 +34,22 @@ namespace Loading
             Class.Image(out Image image);
             grdMain.Children.Add(image);
             //*****************************************************
+
+            Button Jouer = new Button();
+            Border MyBorder = new Border();
+
+            Jouer.Content = "Play";
+            Jouer.VerticalAlignment = VerticalAlignment.Center;
+            Jouer.HorizontalAlignment = HorizontalAlignment.Center;
+            Jouer.Height = 60;
+            Jouer.Width = 250;
+
+            MyBorder.BorderThickness = new Thickness(0);
+            MyBorder.CornerRadius = new CornerRadius(20);
+
+            Jouer.BorderThickness = MyBorder.BorderThickness;
+
+            grdMain.Children.Add(Jouer);
         }
         public void BtnMusic()
         {
@@ -76,7 +92,7 @@ namespace Loading
 
         public void Music()
         {
-            music.Source = new Uri(@"E:\Monopoly\Monopoly\MenuPrincipal.mp3");
+            music.Source = new Uri(@"D:\Monopoly\Monopoly\MenuPrincipal.mp3");
             music.Volume = 1;
 
             grdMain.Children.Add(music);
@@ -85,7 +101,7 @@ namespace Loading
         {
             if (music.Volume < 1)
             {
-                music.Volume += 0.2;
+                music.Volume += 0.1;
             }
         }
 
@@ -93,7 +109,7 @@ namespace Loading
         {
             if (music.Volume > 0)
             {
-                music.Volume -= 0.2;
+                music.Volume -= 0.1;
             }
         }
     }
