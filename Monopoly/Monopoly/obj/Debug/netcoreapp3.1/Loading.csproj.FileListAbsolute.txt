@@ -62,3 +62,5 @@ D:\Monopoly\Monopoly\obj\Debug\netcoreapp3.1\Loading.csproj.CoreCompileInputs.ca
 D:\Monopoly\Monopoly\obj\Debug\netcoreapp3.1\Loading.dll
 D:\Monopoly\Monopoly\obj\Debug\netcoreapp3.1\Loading.pdb
 D:\Monopoly\Monopoly\obj\Debug\netcoreapp3.1\Loading.genruntimeconfig.cache
+E:\Monopoly\Monopoly\obj\Debug\netcoreapp3.1\Principal.g.cs
+E:\Monopoly\Monopoly\obj\Debug\netcoreapp3.1\Principal.baml

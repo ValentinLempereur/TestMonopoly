@@ -41,16 +41,22 @@ namespace Loading
             InitializeComponent();
             timer.Tick += new EventHandler(Timer_Tick);
             Music();
-            BtnMusic();    
-            PrepareInitialize();   
+            BtnMusic();
+            PrepareInitialize();
         }
 
-       public void PrepareInitialize()
+        public void PrepareInitialize()
         {
 
             //********************Image*************************************
             Class.Image(out Image image);
             grdMain.Children.Add(image);
+            //**************************************************************
+            //************************Exit**********************************
+            Class.Exit(out Button exit);
+            exit.Click += new RoutedEventHandler(Exit_Click);
+            grdMain.Children.Add(exit);
+
             //**************************************************************
 
             //***************************chargement******************************************
@@ -121,7 +127,7 @@ namespace Loading
         }
         public void Music()
         {
-            music.Source = new Uri(@"D:\Monopoly\Monopoly\ChargementMusic.mp3");
+            music.Source = new Uri(@"E:\Monopoly\Monopoly\ChargementMusic.mp3");
             music.Volume = 1;
 
             grdMain.Children.Add(music);
@@ -141,6 +147,11 @@ namespace Loading
             {
                 music.Volume += 0.1;
             }
+        }
+
+        public void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

@@ -20,6 +20,7 @@ namespace Loading
     {
         MediaElement music = new MediaElement();
         TestClass Class = new TestClass();
+        Principal principal = new Principal();
         public MenuGame()
         {
             InitializeComponent();
@@ -34,22 +35,40 @@ namespace Loading
             Class.Image(out Image image);
             grdMain.Children.Add(image);
             //*****************************************************
-
+            //***********************EXIT**************************
+            Class.Exit(out Button exit);
+            exit.Click += new RoutedEventHandler(Exit_Click);
+            grdMain.Children.Add(exit);
+            //*****************************************************
+            //*************Bouton met la bordure ne marche pas car c'est de la grosse merde se logiciel merci*************
             Button Jouer = new Button();
+            Button reprendre = new Button();
+            StackPanel Stack = new StackPanel();
             Border MyBorder = new Border();
 
             Jouer.Content = "Play";
-            Jouer.VerticalAlignment = VerticalAlignment.Center;
-            Jouer.HorizontalAlignment = HorizontalAlignment.Center;
             Jouer.Height = 60;
             Jouer.Width = 250;
+            Jouer.Click += new RoutedEventHandler(Jouer_Click);
+
+            reprendre.Content = "Reprendre";
+            reprendre.Height = 60;
+            reprendre.Width = 250;
+
+            Stack.VerticalAlignment = VerticalAlignment.Center;
+            Stack.HorizontalAlignment = HorizontalAlignment.Center;
 
             MyBorder.BorderThickness = new Thickness(0);
             MyBorder.CornerRadius = new CornerRadius(20);
 
-            Jouer.BorderThickness = MyBorder.BorderThickness;
 
-            grdMain.Children.Add(Jouer);
+            Stack.Children.Add(Jouer);
+            Stack.Children.Add(reprendre);
+
+            MyBorder.Child = Stack;
+
+            grdMain.Children.Add(MyBorder);
+            //**************************************************************************************************************
         }
         public void BtnMusic()
         {
@@ -92,7 +111,7 @@ namespace Loading
 
         public void Music()
         {
-            music.Source = new Uri(@"D:\Monopoly\Monopoly\MenuPrincipal.mp3");
+            music.Source = new Uri(@"E:\Monopoly\Monopoly\MenuPrincipal.mp3");
             music.Volume = 1;
 
             grdMain.Children.Add(music);
@@ -111,6 +130,17 @@ namespace Loading
             {
                 music.Volume -= 0.1;
             }
+        }
+
+        public void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        public void Jouer_Click(object sender, RoutedEventArgs e)
+        {
+            principal.Show();
+            this.Close();
         }
     }
 }

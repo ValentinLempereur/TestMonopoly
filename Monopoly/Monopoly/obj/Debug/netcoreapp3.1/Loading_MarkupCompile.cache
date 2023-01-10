@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Monopoly\Monopoly\obj\Debug\netcoreapp3.1\
+E:\Monopoly\Monopoly\obj\Debug\netcoreapp3.1\
 Loading
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-D:\Monopoly\Monopoly\App.xaml
-22034171267
+E:\Monopoly\Monopoly\App.xaml
+32133694432
 
-5-443232963
+6604386615
 192-1533232326
-MainWindow.xaml;MenuGame.xaml;
+MainWindow.xaml;MenuGame.xaml;Principal.xaml;
 
 False
 
